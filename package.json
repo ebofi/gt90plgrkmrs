@@ -1,0 +1,47 @@
+{
+  "_from": "cordova_plugin_gcprint",
+  "_id": "cordova_plugin_gcprint@1.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-U05up47YsbdlTk/qGnVu0VzF1npdlVwWJMqIGVTmF4G91/BZH5xPPNa4FVweoSZI3+1+vEwe2LcmGzxDIGb/yQ==",
+  "_location": "/cordova_plugin_gcprint",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova_plugin_gcprint",
+    "name": "cordova_plugin_gcprint",
+    "escapedName": "cordova_plugin_gcprint",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova_plugin_gcprint/-/cordova_plugin_gcprint-1.0.9.tgz",
+  "_shasum": "ab0294e90ebe7a74481b2d7dcbc6645ba8464139",
+  "_spec": "cordova_plugin_gcprint",
+  "_where": "D:\\Information\\plugin\\PrintDemo\\GcPrintPluginDemo",
+  "author": {
+    "name": "goodcom"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova_plugin_gcprint",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Print service plugin for a specific machine",
+  "keywords": [
+    "GOODCOM",
+    "cordova_plugin_gcprint",
+    "gcprint",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova_plugin_gcprint",
+  "version": "1.0.9"
+}

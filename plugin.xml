@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova_plugin_gcprint" version="1.0.9" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>cordova_plugin_gcprint</name>
+	<js-module name="GcPrintPlugin" src="www/GcPrintPlugin.js">
+		<clobbers target="cordova.plugins.GcPrintPlugin" />
+		</js-module>
+		<platform name="android">
+			<config-file parent="/*" target="res/xml/config.xml">
+				<feature name="GcPrintPlugin">
+					<param name="android-package" value="cordova_plugin_gcprint.GcPrintPlugin" />
+					</feature>
+					</config-file>
+					<config-file target="AndroidManifest.xml" parent="/manifest/application">
+   	 				<activity android:name="cordova_plugin_gcprint.OpenBmp" android:label="@string/app_name">
+        			<intent-filter>
+        				<action android:name="cordova_plugin_gcprint.OpenBmp" />
+                <category android:name="android.intent.category.LAUNCHER" />
+       				</intent-filter>
+    				</activity>
+    				<activity android:name="cordova_plugin_gcprint.HtmlPrint" android:label="@string/app_name">
+        			<intent-filter>
+        				<action android:name="cordova_plugin_gcprint.HtmlPrint" />
+                <category android:name="android.intent.category.LAUNCHER" />
+       				</intent-filter>
+    				</activity>
+					</config-file>
+
+					<config-file parent="/*" target="AndroidManifest.xml">
+						<uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+					</config-file>
+					<source-file src="src/android/GcPrintPlugin.java" target-dir="src/cordova_plugin_gcprint/GcPrintPlugin" />
+					<source-file src="src/android/OpenBmp.java" target-dir="src/cordova_plugin_gcprint/GcPrintPlugin" />
+					<source-file src="src/android/HtmlPrint.java" target-dir="src/cordova_plugin_gcprint/GcPrintPlugin" />
+					<source-file src="src/android/MResource.java" target-dir="src/cordova_plugin_gcprint/GcPrintPlugin" />
+					<source-file src="src/android/lib/WebSocketTools.jar" target-dir="libs" />
+					<source-file src="src/android/lib/GcWebJar_V1.0.jar" target-dir="libs" />
+					<source-file src="src/android/res/layout/gcprint_html.xml" target-dir="res/layout" />
+					</platform>
+						</plugin>
